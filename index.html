@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de IAs Gratuitas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-main: #1e1e2f;
+            --bg-card: #2c2c44;
+            --bg-card-hover: #3a3a55;
+            --color-primary: #00d4ff;
+            --color-text: white;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-main);
+            color: var(--color-text);
+            display: flex;
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: flex-start; /* Alinha o conteúdo ao topo verticalmente */
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Conteúdo principal centralizado */
+        .main-container {
+            width: 100%;
+            max-width: 1200px; /* Limita a largura máxima para PCs */
+        }
+        .main-container h1 {
+            text-align: center;
+            color: var(--color-primary);
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Cartões */
+        .card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            background: var(--bg-card-hover);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+        .card .icon-container {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #40405c;
+            border-radius: 50%;
+        }
+        .card .icon-container i {
+            font-size: 32px;
+            color: var(--color-primary);
+        }
+        .card h3 {
+            margin: 5px 0;
+            color: var(--color-primary);
+            font-size: 1.25rem;
+        }
+        .card p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>🌐 IAs Online</h1>
+        <div class="content" id="ia-list">
+            <a href="https://chat.openai.com/" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-pen-nib"></i></div>
+                <h3>ChatGPT</h3>
+                <p>Gera textos, responde perguntas e ajuda em várias tarefas.</p>
+            </a>
+            <a href="https://gemini.google.com/" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-robot"></i></div>
+                <h3>Google Gemini</h3>
+                <p>IA do Google para texto, imagens e integração com Workspace.</p>
+            </a>
+            <a href="https://www.perplexity.ai/" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <h3>Perplexity AI</h3>
+                <p>Busca inteligente com respostas e fontes citadas.</p>
+            </a>
+            <a href="https://openai.com/dall-e" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-palette"></i></div>
+                <h3>DALL·E 3</h3>
+                <p>Criação de imagens realistas e artísticas por IA.</p>
+            </a>
+            <a href="https://thispersondoesnotexist.com/" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-user-slash"></i></div>
+                <h3>This Person Does Not Exist</h3>
+                <p>Retratos hiper-realistas de pessoas fictícias.</p>
+            </a>
+            <a href="https://creator.nightcafe.studio/" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-moon"></i></div>
+                <h3>NightCafe</h3>
+                <p>Criação de arte digital com inteligência artificial.</p>
+            </a>
+            <a href="https://lumen5.com/" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-video"></i></div>
+                <h3>Lumen5</h3>
+                <p>Cria vídeos automaticamente a partir de textos.</p>
+            </a>
+            <a href="https://www.descript.com/" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-microphone-lines"></i></div>
+                <h3>Descript</h3>
+                <p>Editor de áudio e vídeo com recursos de IA.</p>
+            </a>
+            <a href="https://www.wix.com/website/templates/html/adi" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>Wix ADI</h3>
+                <p>Criação automática de sites com inteligência artificial.</p>
+            </a>
+            <a href="https://typeset.io/" target="_blank" class="card">
+                <div class="icon-container"><i class="fa-solid fa-book-open"></i></div>
+                <h3>Sci-Space</h3>
+                <p>Pesquisa acadêmica e análise de artigos com IA.</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
